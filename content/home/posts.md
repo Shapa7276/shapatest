@@ -8,7 +8,7 @@ active = true  # Activate this widget? true/false
 weight = 60  # Order that this section will appear.
 
 title = "Recent Posts"
-subtitle = ""
+subtitle = "Cross-Site Websocket Hijacking"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
@@ -25,10 +25,10 @@ subtitle = ""
 
   # Filter posts by a taxonomy term.
   [content.filters]
-    tag = ""
-    category = ""
+    tag = "Web Application"
+    category = "Websocket"
     publication_type = ""
-    author = ""
+    author = "Sharan Panegav"
     exclude_featured = false
   
 [design]
