@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Sharan Panegav
 
 # Username (this should match the folder name)
 authors:
@@ -14,7 +14,7 @@ role: Security Cunsultant
 
 # Organizations/Affiliations
 organizations:
-- name: Pune University
+- name: NotSoSecure
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
@@ -38,7 +38,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
+  link: '#contact'  # For a direct email link, use "mailto:sharan.panegav@gmail.com".
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/panegavsharan?lang=en
