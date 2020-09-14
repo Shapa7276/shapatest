@@ -21,9 +21,10 @@ organizations:
 bio: Research and learning never ends we keep moving forward, opening new doors, and doing new things, because we're curious and curiosity keeps leading us down new paths.
   
 interests:
-- Web Application Pentesting
-- Mobile Application Pentesting
-- Information Retrieval
+- Security Assessments of all platform
+- Internet of things 
+- Security Automation
+- Cloud Infrastruture
 
 education:
   courses:
@@ -55,7 +56,7 @@ social:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ""
+email: "sharan.panegav@gmail.com"
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
@@ -64,6 +65,6 @@ user_groups:
 - Visitors
 ---
 
-Sharan is responsible for performing day to day pentest for NotSoSecure. His focus includes web applications, mobile applications and infrastructure penetration tests. He is well versed in web and infrastructure pentest methodology. Currently he is working as a security consultant.
+Sharan is an infoSec guy and bug hunter he loves to explore new techniques for security implications responsible for performing day to day pentest for NotSoSecure. His focus includes web applications, mobile applications and infrastructure penetration tests. He is well versed in web and infrastructure pentest methodology.
 
-An InfoSec guy and bug hunter he loves to explore new techniques for security implications. Every new project provides chance to learn new things which inspires sharan and help him improve his skills. 
+Every new project provides chance to learn new things which inspires sharan and help him improve his skills. 
