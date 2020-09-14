@@ -8,8 +8,10 @@ title: Publications
 #   4 = Citation
 view: 4
 
+
+
 # Optional header image (relative to `static/media/` folder).
-header:
-  caption: ""
+header:HACKIN9 MAGAZINES (VOL15,NO.03)
+  caption: "https://hakin9.org/download/become-a-bug-bounty-hunter/"
   image: ""
 ---
