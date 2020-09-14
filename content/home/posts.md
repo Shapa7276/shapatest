@@ -9,7 +9,7 @@ weight = 60  # Order that this section will appear.
 
 title = "Recent Posts"
 subtitle = "Cross-Site Websocket Hijacking"
-
+ link:https://medium.com/@sharan.panegav/account-takeover-using-cross-site-websocket-hijacking-cswh-99cf9cea6c50
 [content]
   # Page type to display. E.g. post, talk, or publication.
   page_type = "post"
