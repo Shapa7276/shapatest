@@ -21,7 +21,7 @@ organizations:
 bio: Research and learning never ends we keep moving forward, opening new doors, and doing new things, because we're curious and curiosity keeps leading us down new paths.
   
 interests:
-- Security Assessments of all platform
+- [*] Security Assessments 
 - Internet of things 
 - Security Automation
 - Cloud Infrastruture
