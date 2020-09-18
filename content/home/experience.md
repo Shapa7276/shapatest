@@ -27,9 +27,9 @@ date_format = "Jan 2006"
   description = """
   Responsibilities include:
   
-  * Analysing
-  * Modelling
-  * Deploying
+  * Performing penetration testing and vulnerability management 
+  *Delivering Configuration Audits and drafting Hardening Controls for Servers and Network Devices.
+  * Plan and create penetration methods, scripts and testscases
   """
 
 [[experience]]
