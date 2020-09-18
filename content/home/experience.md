@@ -39,6 +39,6 @@ date_format = "Jan 2006"
   location = "India"
   date_start = "2018-11-10"
   date_end = "2019-10-03"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  description = """Pentesting Web,Mobile and API.."""
 
 +++
