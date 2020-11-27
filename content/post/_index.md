@@ -1,14 +1,15 @@
 ---
-title: Posts
-
-# View.
-#   1 = List
-#   2 = Compact
-#   3 = Card
+draft: true
 view: 2
-
-# Optional header image (relative to `static/media/` folder).
 header:
   caption: ""
   image: ""
+title: Posts
+subtitle: Account Takeover Using Cross-Site WebSocket Hijacking (CSWH)
+date: 2020-11-27T10:21:37.115Z
+featured: true
+image:
+  filename: download.png
+  preview_only: true
 ---
+<https://medium.com/@sharan.panegav/account-takeover-using-cross-site-websocket-hijacking-cswh-99cf9cea6c50>
