@@ -39,6 +39,13 @@ date_format = "Jan 2006"
   location = "India"
   date_start = "2018-11-10"
   date_end = "2019-10-03"
-  description = """Pentesting Web,Mobile and API.."""
+  description = """
+  Responsibilities include:
+  
+  * Performing consulting services in the discipline of vulnerability management and penetration testing 
+  * Implemented pen testing lab using vulnerabilities based on web server 
+  * Take every week training assistance session on Web application penetration testing 
+
+  """
 
 +++
