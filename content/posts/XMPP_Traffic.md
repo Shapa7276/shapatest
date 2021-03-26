@@ -41,7 +41,7 @@ XMPP is a short form for Extensible Messaging Presence Protocol. It's protocol f
 We will divide the Blog in below four Parts Assuming the Mobile application using XMPP protocol on host "xmppexampleserver.com" on port "5222".
 
 ```
-XMPP server :- XMPPexampleserver.com
+XMPP server :- xmppexampleserver.com
 XMPP port:- 5222
 
 ```
