@@ -1,5 +1,5 @@
 ---
-title: Hackish Way Capture 'XMPP' traffic of Mobile Applications
+title: Hackish Way to Capture 'XMPP' traffic of Mobile Applications
 subtitle: Steps to Capture the 'XMPP' traffic of mobile Application using [frida](https://frida.re/),[DNSChef](https://github.com/iphelix/dnschef) and [mitmrelay](https://github.com/jrmdev/mitm_relay)
 asciinema: true
 
@@ -38,24 +38,24 @@ image:
 
 XMPP is a short form for Extensible Messaging Presence Protocol. It's protocol for streaming XML elements over a network in order to exchange messages and presence information in close to real time. This protocol is mostly used by instant messaging applications like WhatsApp.
 
-We will divide the Blog in below four Parts Assuming the Mobile application using XMPP protocol on host "XMPPexampleserver.com" on port "5222".
+We will divide the Blog in below four Parts Assuming the Mobile application using XMPP protocol on host "xmppexampleserver.com" on port "5222".
 
 ```
 XMPP server :- XMPPexampleserver.com
 XMPP port:- 5222
+
 ```
+{{< figure src="https://raw.githubusercontent.com/Shapa7276/mysite/master/test/Steps.jpg" title="Traffic Capture Flowchart." >}}
 
 1. Bypass the SSL Pinning of Mobile Application using frida tools.
 2. Route All DNS traffic of the Mobile application to our DNS listner.
-3. Run DNSChef to capture the DNS query and reroute to MiTM relay.
+3. Run DNSChef to capture the DNS request of xmpp client and reroute to MiTM relay.
 4. Run the mitm relay to capture the XMPP request and route it to burp suite. 
-
-{{< figure src="https://raw.githubusercontent.com/Shapa7276/mysite/master/test/Steps.jpg" title="Traffic Capture Flowchart." >}}
 
 
 ## Step 1. Bypass the SSL pinning of mobile Application
 
-As most of Mobile applications are implements the SSL pinning. We need to firsrt bypass the SSL pinning to capture the unecrypted XMPP traffic    
+As most of Mobile the application implements the SSL pinning. We need to first bypass the SSL pinning of mobile application to capture the unecrypted XMPP traffic.   
 
  Note:-  You can use any method to bypass the SSL pinning
 
@@ -66,6 +66,7 @@ $ frida --codeshare pcipolloni/universal-android-ssl-pinning-bypass-with-frida -
 
 ```
 Assuming that application SSL pinning is bypassed now lets route unecrypted traffic DNS listener 
+
 
 ## Step 2. Route Mobile DNS Traffic 
 
@@ -83,14 +84,14 @@ Assuming that application SSL pinning is bypassed now lets route unecrypted traf
 
  ```
 
-## Step 3  Running DNSChef
+## Step 3  Running DNSChef on Kali Machine
 
-Route DNS Traffic of domain "XMPPexampleserver.com" to LocalServer
+Route DNS Traffic of domain "XMPPexampleserver.com" to LocalServer Using below command all request for domain *XMPPexampledomain.com* will be faked to Kali Machine IP "192.168.31.178"
 
 
 ```
 
-sudo dnschef -i 192.168.31.178 --fakedomains XMPPexampleserver.com --fakeip 192.168.31.178 
+sudo dnschef -i 192.168.31.178 --fakedomains xmppexampleserver.com --fakeip 192.168.31.178 
           _                _          __  
          | | version 0.4  | |        / _| 
        __| |_ __  ___  ___| |__   ___| |_ 
@@ -101,29 +102,30 @@ sudo dnschef -i 192.168.31.178 --fakedomains XMPPexampleserver.com --fakeip 192.
 
 (11:33:27) [*] DNSChef started on interface: 192.168.31.178
 (11:33:27) [*] Using the following nameservers: 8.8.8.8
-(11:33:27) [*] Cooking A replies to point to 192.168.31.178 matching: XMPPexampleserver.com
+(11:33:27) [*] Cooking A replies to point to 192.168.31.178 matching: xmppexampleserver.com
 
 
 ```
 
-From the above  the step all request for domain *XMPPexampledomain.com* will be faked to Kali Machine IP "192.168.31.178"
 
 
 ## Step 4  
 
-Download [mitm_relay](https://github.com/jrmdev/mitm_relay) which intercept and modify non-HTTP protocols through Burp & others with support for SSL and STARTTLS interception
+Now we have all DNS request redirected to our kali machine  we need to relay the XMPP messages on port 5222 using 
+[mitm_relay](https://github.com/jrmdev/mitm_relay) which intercept and modify non-HTTP protocols through Burp & others with support for SSL and STARTTLS interception
 
 
 
 ```
-sudo python mitm_relay.py -l 0.0.0.0 -r 5222:XMPPexampleserver.com:5222  -p 192.168.31.101:9090 
+sudo python mitm_relay.py -l 0.0.0.0 -r 5222:xmppexampleserver.com:5222  -p 192.168.31.101:9090 
+
 [!] Server cert/key not provided, SSL/TLS interception will not be available. To generate certs, see provided script 'gen_certs.sh'.
 [i] Client cert/key not provided.
 ('[+] Webserver listening on', ('192.168.31.178', 49999))
-[+] Relay listening on tcp 5222 -> XMPPexampleserver.com:5222
+[+] Relay listening on tcp 5222 -> xmppexampleserver.com:5222
 
 #-l -: Address the relays will listen on  0.0.0.0
-#-r -: Create new relays on port to 5222 to route all traffic to orginal domain and port XMPPexampleserver:5222
+#-r -: Create new relays on port to 5222 to route all traffic to orginal domain and port xmppexampleserver:5222
 #-p -: Proxy to forward all requests (Burp Suite IP and Port)
 ```
 ## Step 4  
