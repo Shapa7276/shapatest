@@ -1,6 +1,6 @@
 ---
-title: Hackish Way to Capture 'XMPP' traffic of Mobile Applications
-subtitle: Steps to Capture the 'XMPP' traffic of mobile Application using [frida](https://frida.re/),[DNSChef](https://github.com/iphelix/dnschef) and [mitmrelay](https://github.com/jrmdev/mitm_relay)
+title: Hackish Way to Capture 'XMPP' Traffic of Mobile Applications
+subtitle: Steps to capture the 'XMPP' traffic of mobile application using [frida](https://frida.re/),[DNSChef](https://github.com/iphelix/dnschef) and [mitmrelay](https://github.com/jrmdev/mitm_relay)
 asciinema: true
 
 

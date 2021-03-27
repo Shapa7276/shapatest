@@ -1,5 +1,5 @@
 ---
-title: WebView and JavaScript bridge
+title: WebView and JavaScript Bridge
 description: >-
   While researching on android WebView vulnerabilities We got to know most of
   the mobile application uses WebView JavaScript bridge called…
