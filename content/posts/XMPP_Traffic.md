@@ -56,7 +56,7 @@ As most of mobile the application implements the SSL pinning. We need to first b
 
  Note:-  You can use any method to bypass the SSL pinning
 
-I personally preffer [Universal Android SSL Pinning Bypass with Frida](https://codeshare.frida.re/@pcipolloni/universal-android-ssl-pinning-bypass-with-frida/)
+I personally prefer [Universal Android SSL Pinning Bypass with Frida](https://codeshare.frida.re/@pcipolloni/universal-android-ssl-pinning-bypass-with-frida/)
 
 ```
 $ frida --codeshare pcipolloni/universal-android-ssl-pinning-bypass-with-frida -f YOUR_BINARY
@@ -139,7 +139,7 @@ Where
 
  ## Step 5
 
-Now got to mobile application create some traffic and you will get XMPP requests on burp suite as similar to below
+Now go to mobile application create some traffic and you will get XMPP requests on burp suite as similar to below
 
 {{< figure src="https://raw.githubusercontent.com/Shapa7276/shapatest/master/images_temp/Burp.jpg" title="Burp Suite Traffic." >}}
 
