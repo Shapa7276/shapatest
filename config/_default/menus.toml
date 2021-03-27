@@ -14,12 +14,12 @@
   weight = 20
 
 [[main]]
-  name = "Blogs"
+  name = "Projects"
   url = "#projects"
   weight = 30
 
 [[main]]
-  name = "Tools"
+  name = "Blogs"
   url = "#posts"
   weight = 40
 

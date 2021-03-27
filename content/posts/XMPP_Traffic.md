@@ -12,10 +12,7 @@ summary: Steps to Capture the 'XMPP' traffic of mobile Application using [frida]
 projects: []
 
 # Date published
-date: "2020-12-13T00:00:00Z"
-
-# Date updated
-lastmod: "2020-12-13T00:00:00Z"
+date: "2021-03-13T00:00:00Z"
 
 # Is this an unpublished draft?
 draft: false
@@ -45,7 +42,7 @@ XMPP server :- xmppexampleserver.com
 XMPP port:- 5222
 
 ```
-{{< figure src="https://raw.githubusercontent.com/Shapa7276/mysite/master/test/Steps.jpg" title="Traffic Flow Diagram." >}}
+{{< figure src="https://raw.githubusercontent.com/Shapa7276/shapatest/master/images_temp/Steps.jpg" title="Traffic Flow Diagram." >}}
 
 1. Bypass the SSL pinning of mobile application using frida tools.
 2. Route all DNS traffic of the mobile application to  DNS listner.
@@ -72,11 +69,11 @@ Assuming that application SSL pinning is bypassed now lets route unecrypted traf
 
  1. Go to Settings, click on Network & Internet then WiFi then WIFI Advanced Option and Select Static IP setting.
 
- {{< figure src="https://raw.githubusercontent.com/Shapa7276/mysite/master/test/DNS_1.jpg" title="Select Static IP." >}}
+ {{< figure src="https://raw.githubusercontent.com/Shapa7276/shapatest/master/images_temp/DNS_1.jpg" title="Select Static IP." >}}
 
  2. Set the Static IP and configure a custom DNS server with Kali Machine IP address (192.168.31.178) 
 
-{{< figure src="https://raw.githubusercontent.com/Shapa7276/mysite/master/test/DNS_2.jpg" title="Configure the custom DNS server." >}}
+{{< figure src="https://raw.githubusercontent.com/Shapa7276/shapatest/master/images_temp/DNS_2.jpg" title="Configure the custom DNS server." >}}
 
  ```
  Mobile-IP:- 192.168.31.173
@@ -144,7 +141,7 @@ Where
 
 Now got to mobile application create some traffic and you will get XMPP requests on burp suite as similar to below
 
-{{< figure src="https://raw.githubusercontent.com/Shapa7276/mysite/master/test/Burp.jpg" title="Burp Suite Traffic." >}}
+{{< figure src="https://raw.githubusercontent.com/Shapa7276/shapatest/master/images_temp/Burp.jpg" title="Burp Suite Traffic." >}}
 
 ## Conclusion
 Above steps are not limited to capture the XMPP traffic we can use it capture the all non-HTTP protocols traffic of mobile application. 
