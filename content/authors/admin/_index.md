@@ -6,7 +6,7 @@ superuser: true
 authors:
   - admin
 title: Sharan Panegav
-role: Security Consultant @NotSoSecure Global Services Limited
+role: InfoSec Enthusiast, Bug Hunter, Dota 2 Addict. 
 bio: Research and learning never ends we keep moving forward, opening new doors,
   and doing new things, because we're curious and curiosity keeps leading us
   down new paths.
@@ -14,7 +14,7 @@ interests:
   - All Types Security Assessments
   - Internet Of Things
   - Security Automation
-  - Cloud Infrastruture
+  - Cloud Infrastructure
   - MobilePentest
 social:
   - icon: envelope
