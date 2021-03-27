@@ -6,7 +6,7 @@ superuser: true
 authors:
   - admin
 title: Sharan Panegav
-role: Security Cunsultant
+role: Security Consultant @NotSoSecure Global Services Limited
 bio: Research and learning never ends we keep moving forward, opening new doors,
   and doing new things, because we're curious and curiosity keeps leading us
   down new paths.
