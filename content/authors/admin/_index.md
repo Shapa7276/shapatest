@@ -1,6 +1,6 @@
 ---
 organizations:
-  - name: NotSoSecure
+  - name: NotSoSecure Global Services Limited
     url: ""
 superuser: true
 authors:
